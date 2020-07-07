@@ -2,6 +2,7 @@
   <v-app>
     <v-main>
       <v-container>
+        <nav-bar />
         <nuxt />
       </v-container>
     </v-main>
@@ -12,7 +13,11 @@
 </template>
 
 <script>
+import NavBar from '~/components/NavBar'
 export default {
+  components: {
+    NavBar,
+  },
   data() {
     return {
       fixed: false,
